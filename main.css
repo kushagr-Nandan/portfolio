@@ -1,0 +1,300 @@
+/*---------------------------------------------------------------background work------------------------------------------------------------------------------------------*/
+body {
+    background: aquamarine;
+    margin: 0px;
+    padding: 0px;
+}
+.box1 {
+    position: fixed;
+    height: 150px;
+    width: 200%;
+    background: yellow;
+    box-shadow: 10px 10px 10px darkcyan;
+    transform: rotate(5deg);
+    margin-bottom: 55%;
+
+}
+.box2 {
+    position: fixed;
+    height: 200px;
+    width: 200%;
+    background: orange;
+    box-shadow: 10px 10px 10px darkcyan;
+    transform: rotate(85deg);
+    left: 0;
+}
+
+.box3 {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    margin-left: -200px;
+    margin-top: -40px;
+    background: pink;
+    box-shadow: 10px 10px 10px darkcyan;
+    transform: rotate(10deg);
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Navigation Bar--------------------------------------------------------------------------------------*/
+.nav-bar {
+
+    width: 5rem;
+    height: 100%;
+    background: dimgray;
+    opacity: .8;
+    position: fixed;
+    transition-duration: 500ms;
+    z-index: 100;
+
+
+
+}
+.nav-bar:hover {
+    width: 15rem;
+}
+.nav-btn {
+    top: 0;
+    margin-top: 80px;
+    transition-duration: 200ms;
+    transform: rotate(-90deg);
+    font-weight: 400;
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: -45px;
+    animation: spinback 500ms forwards;
+}
+@keyframes spinback {
+    from {
+    transform: rotate(0deg);
+        margin-left: 50px;
+        display: none;
+    }
+    to {
+        transform: rotate(-90deg);
+    }   
+}
+.nav-bar:hover .nav-btn {
+    animation: spin 500ms 100ms forwards;
+}
+@keyframes spin {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0deg);
+        margin-left: 50px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Intro Part-----------------------------------------------------------------------------------------------*/
+.intro-container{
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: 70vh;
+    margin-top: 10vh;
+    justify-content: space-between;
+    margin-bottom: 2.5vh;
+
+}
+.myname
+{
+    width: 50%;
+    padding-top: 10vh;
+    padding-left: 10%;
+}
+.photobox {
+    width: 50%;
+    padding: 1%;;
+    background: rgba(190, 44, 44, 0.829);
+
+
+}
+.photo{
+    border-radius: 50%;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Vision Box-----------------------------------------------------------------------------------------------*/
+.vision{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5vh;
+    padding-right: 10%;
+    background: rgba(190, 44, 44, 0.829);
+    width: 80%; 
+    height: auto;
+
+}
+.vis-des{
+    padding-left: 1%;
+    flex-grow: 3;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------About button-----------------------------------------------------------------------------------------------*/
+
+.aboutme{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    height:30vh;
+    justify-content: space-around;
+    align-content: center;
+}
+.optbox
+{
+    height: 200px;
+    width: 200px;
+    background: rgba(0, 255, 255, 0.274);
+    font-size: 175%;
+    border-color: cyan;
+    border-width: 5px;
+    color: whitesmoke;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.6, -0.61, 0.2, 1.79);
+}
+.optbox:hover {
+    background: cyan;
+    transform: rotate(45deg);
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Skill Box-----------------------------------------------------------------------------------------------*/
+.skillbox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5vh;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 5vh;
+    background: rgba(190, 44, 44, 0.829);
+    width: 100%;
+    height: auto;
+}
+.pbar1{
+    width: 0%;
+    animation: load1 2s 1s forwards;
+}
+@keyframes load1{
+    from{ width: 0%;}
+    to{width: 97%;}
+}
+.pbar2{
+    width: 0%;
+    animation: load2 2s 1s forwards;
+}
+@keyframes load2{
+    from{ width: 0%;}
+    to{width: 95%;}
+}
+.pbar3{
+    width: 0%;
+    animation: load3 2s 1s forwards;
+}
+@keyframes load3{
+    from{ width: 0%;}
+    to{width: 89%;}
+}
+.pbar4{
+    width: 0%;
+    animation: load4 2s 1s forwards;
+}
+@keyframes load4{
+    from{ width: 0%;}
+    to{width: 90%;}
+}
+.pbar5{
+    width: 0%;
+    animation: load5 2s 1s forwards;
+}
+@keyframes load5{
+    from{ width: 0%;}
+    to{width: 90%;}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Achievement Box-----------------------------------------------------------------------------------------------*/
+
+.achievbox{
+    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5vh;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 5vh;
+    background: rgba(190, 44, 44, 0.829);
+    width: 100%; 
+    height: auto;
+
+}
+.ach-child{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2vh;
+}
+.ach-img{
+    background-color:rgb(190, 44, 44) ;
+}
+.ach-dis{
+    color: aliceblue;
+    flex-grow: 3;
+    background-color: rgba(245, 245, 220, 0.411);
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------Qualification Box-----------------------------------------------------------------------------------------------*/
+.qualifbox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    padding-top: 1%;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 5vh;
+    background: rgb(190, 44, 44,0.829);
+    width: 100%; 
+    height: auto;
+
+    justify-content: space-around;
+}
+.data{
+    color: aliceblue;
+    margin-top: 2%;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(190, 44, 44);
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Footer-----------------------------------------------------------------------------------------------*/
+.footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    padding-top: 1%;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 5vh;
+    background: rgba(210, 105, 30, 0.418);
+    width: 100%; 
+    height: 300px;
+    justify-content: space-around;
+}
+.blank{
+    width:50%;
+}
